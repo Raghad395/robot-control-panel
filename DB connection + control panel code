@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<?php
+
+ if(isset($_post['button')){
+ 
+   $db = mysqli_connect( "localhost", "root"," ","robot_control_panel")                      
+			or die( "Could not connect to database </body></html>" );
+
+ }
+?>
+
+<html>
+<body style='background-color:lightgrey'>
+
+
+
+<h2 style= 
+'text-align:left;
+text-indent: 20px'>Robot Control Panel</h2>
+
+<table style="width:60%">
+  <tr>
+    <th>  </th>
+    <th>  </th> 
+    <th>  </th>
+  </tr>
+  
+     <tr><td></td>
+     
+    
+<td><input type="button" value="forward" name= "button"  method="post" 
+        style="color: black; 
+        font-size: 16px; 
+        padding: 15px;
+        background: lightblue; 
+        border-radius: 12px;
+        border:none;
+		margin-left:20px"></td>
+      <td>   </td>
+      </tr> </div>
+         <br>
+
+      <tr>
+<td><input type="button" value="left" name = "button" method="post"
+        style="color: black; 
+        font-size: 16px; 
+        padding: 15px;
+        background: lightblue; 
+        border-radius: 12px;
+        border:none;"></td>
+        
+
+<td><input type="button" value="stop" name = "button" method="post"
+        style="color: black; 
+        font-size: 16px; 
+        padding: 15px;
+        background: lightblue; 
+        border-radius: 12px;
+        border:none;
+        margin:40px"></td>
+        
+        <br>
+<td><input type="button" value="right" name = "button" method="post"
+        style="color: black; 
+        font-size: 16px; 
+        padding: 15px;
+        background: lightblue; 
+        border-radius: 12px;
+        border:none;
+		margin-right:900px
+       "></td>
+       </tr></div>
+
+        
+        <tr>
+        <td></td>
+<td><input type="button" value="backward" name = "button" method="post"
+        style="color: black; 
+        font-size: 16px; 
+        padding: 15px;
+        background: lightblue; 
+        border-radius: 12px;
+        border:none;
+        margin-left:20px">   
+        <td> 
+       </td>
+       </tr>
+       
+    </body>
+	
+	
+	
+	<!--
+    Note: I have a problem trying to connect the page with DB
+    I'm using appserv host and I tried to copy the page file 
+	in the same appserv file but still I couldn't 
+	fix the problem.
+	---->
+	</html>
+	
+	
